@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <a href="{% url 'home' %}">back</a>
+    <h1>there are {{var2}} words</h1>
+    {{var1}}
+    <br>
+    {% for word, num in var3 %}
+    {{word}}==>> {{num}} <br>
+    {% endfor %}
+</body>
+
+</html>
